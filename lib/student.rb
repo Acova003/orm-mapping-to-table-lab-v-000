@@ -42,10 +42,7 @@ class Student
       VALUES (?, ?)
     SQL
     DB[:conn].execute(sql, self.name, self.grade)
-    
-    last_student = ALL[-1]
-    @id = last_student.id
-    #binding.pry
+
   end 
   
   def self.create
