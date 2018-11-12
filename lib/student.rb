@@ -49,4 +49,10 @@ class Student
   def self.create
     ALL << Student.new(name, grade)
   end 
+  
+  def self.create(name:, grade:)
+    student = Song.new(name, grade)
+    student.save
+    student
+  end
 end
