@@ -45,7 +45,7 @@ class Student
     
     last_student = ALL[-1]
     @id = last_student.id
-    binding.pry
+    #binding.pry
   end 
   
   def self.create
